@@ -1,0 +1,34 @@
+Drill report for C:/Users/ririf/Documents/pitaya 0001/pitaya 0001.kicad_pcb
+Created on 01/10/2017 20:02:40
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'pitaya 0001.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0,40mm  0,016"  (35 holes)
+    T2  0,70mm  0,028"  (8 holes)
+    T3  0,76mm  0,030"  (36 holes)
+    T4  0,80mm  0,031"  (18 holes)
+    T5  1,00mm  0,039"  (72 holes)
+    T6  1,20mm  0,047"  (3 holes)
+    T7  1,40mm  0,055"  (5 holes)
+    T8  1,60mm  0,063"  (6 holes)
+    T9  1,80mm  0,071"  (4 holes)
+    T10  2,00mm  0,079"  (2 holes)
+    T11  3,05mm  0,120"  (4 holes)
+    T12  3,20mm  0,126"  (6 holes)
+    T13  4,00mm  0,157"  (1 hole)
+
+    Total plated holes count 200
+
+
+Drill file 'pitaya 0001-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+
+    Total unplated holes count 0

@@ -1,0 +1,1293 @@
+EESchema Schematic File Version 2
+LIBS:pitaya 0001-rescue
+LIBS:SamacSys_Parts
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:pitaya 0001-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Module WS28 HC-SR04 DMX"
+Date "2017-09-18"
+Rev "V 00"
+Comp "PITAYA"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SIL12-RESCUE-pitaya_0001 ù_1/2
+U 1 1 599D962E
+P 3950 2150
+F 0 "ù_1/2" H 3950 2800 50  0000 C CNN
+F 1 "CONN_01X12" V 4050 2150 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x12_Pitch2.54mm" H 3950 2150 50  0001 C CNN
+F 3 "" H 3950 2150 50  0001 C CNN
+	1    3950 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L SIL12-RESCUE-pitaya_0001 ù_2/2
+U 1 1 599D96BA
+P 4150 2150
+F 0 "ù_2/2" H 4150 2800 50  0000 C CNN
+F 1 "CONN_01X12" V 4250 2150 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x12_Pitch2.54mm" H 4150 2150 50  0001 C CNN
+F 3 "" H 4150 2150 50  0001 C CNN
+	1    4150 2150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L SIL12-RESCUE-pitaya_0001 ù_1/1
+U 1 1 599D9878
+P 2550 2150
+F 0 "ù_1/1" H 2550 2800 50  0000 C CNN
+F 1 "CONN_01X12" V 2650 2150 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x12_Pitch2.54mm" H 2550 2150 50  0001 C CNN
+F 3 "" H 2550 2150 50  0001 C CNN
+	1    2550 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L SIL12-RESCUE-pitaya_0001 ù_2/1
+U 1 1 599D987E
+P 2750 2150
+F 0 "ù_2/1" H 2750 2800 50  0000 C CNN
+F 1 "CONN_01X12" V 2850 2150 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x12_Pitch2.54mm" H 2750 2150 50  0001 C CNN
+F 3 "" H 2750 2150 50  0001 C CNN
+	1    2750 2150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L 4053-RESCUE-pitaya_0001 CI4053
+U 1 1 599D990B
+P 5650 2150
+F 0 "CI4053" H 5750 2150 50  0000 C CNN
+F 1 "4053" H 5750 1950 50  0000 C CNN
+F 2 "Housings_DIP:DIP-16_W7.62mm_Socket" H 5650 2150 60  0001 C CNN
+F 3 "" H 5650 2150 60  0001 C CNN
+	1    5650 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V-RESCUE-pitaya_0001 #PWR01
+U 1 1 599D99A6
+P 1000 1050
+F 0 "#PWR01" H 1000 900 50  0001 C CNN
+F 1 "+5V" H 1000 1190 50  0000 C CNN
+F 2 "" H 1000 1050 50  0001 C CNN
+F 3 "" H 1000 1050 50  0001 C CNN
+	1    1000 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-pitaya_0001 #PWR02
+U 1 1 599D99C6
+P 950 3650
+F 0 "#PWR02" H 950 3400 50  0001 C CNN
+F 1 "GND" H 950 3500 50  0000 C CNN
+F 2 "" H 950 3650 50  0001 C CNN
+F 3 "" H 950 3650 50  0001 C CNN
+	1    950  3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Screw_Terminal_1x03 VCC_DATA_GND1
+U 1 1 599DA7FC
+P 7200 2100
+F 0 "VCC_DATA_GND1" H 7200 2950 50  0000 C TNN
+F 1 "Screw_Terminal_1x08" V 7050 2100 50  0000 C TNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_4UCON_19963_03x3.5mm_Straight" H 7200 1275 50  0001 C CNN
+F 3 "" H 7175 2700 50  0001 C CNN
+	1    7200 2100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CP Co1
+U 1 1 599EA81D
+P 1200 3200
+F 0 "Co1" H 1225 3300 50  0000 L CNN
+F 1 "100uF" H 1225 3100 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D6.3mm_P2.50mm" H 1238 3050 50  0001 C CNN
+F 3 "" H 1200 3200 50  0001 C CNN
+	1    1200 3200
+	1    0    0    -1  
+$EndComp
+Text Notes 8600 1000 0    60   ~ 0
+WS2812B
+Text Notes 7500 3750 0    60   ~ 0
+DMX
+Text Notes 1450 5500 0    60   ~ 0
+HC-SR04
+Text Notes 2950 5450 0    60   ~ 0
+AFFICHEUR
+Text Notes 4800 4450 0    60   ~ 0
+RO
+Text Notes 4800 4550 0    60   ~ 0
+RE
+Text Notes 4800 4650 0    60   ~ 0
+DE
+Text Notes 4800 4750 0    60   ~ 0
+DI
+Text Notes 5150 4450 0    60   ~ 0
+VCC
+Text Notes 5150 4550 0    60   ~ 0
+B
+Text Notes 5150 4650 0    60   ~ 0
+A
+Text Notes 5150 4750 0    60   ~ 0
+GND
+Text Notes 4850 5450 0    60   ~ 0
+Module DMX
+Text Notes 7400 1900 0    60   ~ 0
+VCC
+Text Notes 7400 2100 0    60   ~ 0
+PLAYER Data In
+Text Notes 7400 2300 0    60   ~ 0
+GND
+$Comp
+L TM21R-5C-88(50)-RESCUE-pitaya_0001 RJ45_HC-SR4
+U 1 1 59B92C09
+P 1400 4200
+F 0 "RJ45_HC-SR4" H 1750 4350 50  0000 C CNN
+F 1 "TM21R-5C-88(50)" H 1750 3750 50  0000 C CNN
+F 2 "TM21R-5C-88(riri)" H 1750 3650 50  0001 C CNN
+F 3 "https://www.hirose.com/product/en/download_file/key_name/TM21R-5C-88-LP(50)/category/Drawing (2D)/doc_file_id/79045/?file_category_id=6&amp;item_id=02222892050&amp;is_series=" H 1750 3550 50  0001 C CNN
+F 4 "8 way Cat6 shielded RJ45 PCB socket,1.5A Hirose Cat5e RJ45 Connector Socket, STP, Right Angle, Through Hole" H 1750 3450 50  0001 C CNN "Description"
+F 5 "RS" H 1750 3350 50  0001 C CNN "Supplier_Name"
+F 6 "6256710" H 1750 3250 50  0001 C CNN "RS Part Number"
+F 7 "Hirose" H 1750 3150 50  0001 C CNN "Manufacturer_Name"
+F 8 "TM21R-5C-88(50)" H 1750 3050 50  0001 C CNN "Manufacturer_Part_Number"
+	1    1400 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L TM21R-5C-88(50)-RESCUE-pitaya_0001 RJ45_AFF1
+U 1 1 59B92CEE
+P 2950 4200
+F 0 "RJ45_AFF1" H 3300 4350 50  0000 C CNN
+F 1 "TM21R-5C-88(50)" H 3300 3750 50  0000 C CNN
+F 2 "TM21R-5C-88(riri)" H 3300 3650 50  0001 C CNN
+F 3 "https://www.hirose.com/product/en/download_file/key_name/TM21R-5C-88-LP(50)/category/Drawing (2D)/doc_file_id/79045/?file_category_id=6&amp;item_id=02222892050&amp;is_series=" H 3300 3550 50  0001 C CNN
+F 4 "8 way Cat6 shielded RJ45 PCB socket,1.5A Hirose Cat5e RJ45 Connector Socket, STP, Right Angle, Through Hole" H 3300 3450 50  0001 C CNN "Description"
+F 5 "RS" H 3300 3350 50  0001 C CNN "Supplier_Name"
+F 6 "6256710" H 3300 3250 50  0001 C CNN "RS Part Number"
+F 7 "Hirose" H 3300 3150 50  0001 C CNN "Manufacturer_Name"
+F 8 "TM21R-5C-88(50)" H 3300 3050 50  0001 C CNN "Manufacturer_Part_Number"
+F 9 "" H 3300 2950 50  0001 C CNN "Allied_Number"
+F 10 "" H 3300 2850 50  0001 C CNN "Other Part Number"
+F 11 "" H 3500 2750 50  0001 C CNN "Height"
+	1    2950 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L TM21R-5C-88(50)-RESCUE-pitaya_0001 RJ45_WS28
+U 1 1 59B92D57
+P 8450 1500
+F 0 "RJ45_WS28" H 8800 1650 50  0000 C CNN
+F 1 "TM21R-5C-88(50)" H 8800 1050 50  0000 C CNN
+F 2 "TM21R-5C-88(riri)" H 8800 950 50  0001 C CNN
+F 3 "https://www.hirose.com/product/en/download_file/key_name/TM21R-5C-88-LP(50)/category/Drawing (2D)/doc_file_id/79045/?file_category_id=6&amp;item_id=02222892050&amp;is_series=" H 8800 850 50  0001 C CNN
+F 4 "8 way Cat6 shielded RJ45 PCB socket,1.5A Hirose Cat5e RJ45 Connector Socket, STP, Right Angle, Through Hole" H 8800 750 50  0001 C CNN "Description"
+F 5 "RS" H 8800 650 50  0001 C CNN "Supplier_Name"
+F 6 "6256710" H 8800 550 50  0001 C CNN "RS Part Number"
+F 7 "Hirose" H 8800 450 50  0001 C CNN "Manufacturer_Name"
+F 8 "TM21R-5C-88(50)" H 8800 350 50  0001 C CNN "Manufacturer_Part_Number"
+F 9 "" H 8800 250 50  0001 C CNN "Allied_Number"
+F 10 "" H 8800 150 50  0001 C CNN "Other Part Number"
+F 11 "" H 9000 50  50  0001 C CNN "Height"
+	1    8450 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L NC3FAAH2-RESCUE-pitaya_0001 DMX_OUT_1
+U 1 1 59B92DD8
+P 7200 4100
+F 0 "DMX_OUT_1" H 7550 4250 50  0000 C CNN
+F 1 "NC3FAAH2" H 7550 3850 50  0000 C CNN
+F 2 "NC3FAAH2_2" H 7550 3750 50  0001 C CNN
+F 3 "http://www.neutrik.com/zoolu-website/media/download/1398/Drawing NC3FAAH2-0.pdf" H 7550 3650 50  0001 C CNN
+F 4 "XLR Connectors 3P FEMALE HORIZ PIN 1 & GRD SEPARATE" H 7550 3550 50  0001 C CNN "Description"
+F 5 "RS" H 7550 3450 50  0001 C CNN "Supplier_Name"
+F 6 "" H 7550 3350 50  0001 C CNN "RS Part Number"
+F 7 "Neutrik" H 7550 3250 50  0001 C CNN "Manufacturer_Name"
+F 8 "NC3FAAH2" H 7550 3150 50  0001 C CNN "Manufacturer_Part_Number"
+F 9 "70548827" H 7550 3050 50  0001 C CNN "Allied_Number"
+F 10 "" H 7550 2950 50  0001 C CNN "Other Part Number"
+F 11 "" H 7750 2850 50  0001 C CNN "Height"
+	1    7200 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CB10LV103M-RESCUE-pitaya_0001 R1
+U 1 1 59B93FCD
+P 1200 2050
+F 0 "R1" H 1550 2200 50  0000 C CNN
+F 1 "CB10LV103M" H 1550 1800 50  0000 C CNN
+F 2 "CB10LV103M" H 1550 1700 50  0001 C CNN
+F 3 "http://uk.rs-online.com/web/p/products/0473473" H 1550 1600 50  0001 C CNN
+F 4 "CB10LV carbon trimmer, top adjust 10K" H 1550 1500 50  0001 C CNN "Description"
+F 5 "RS" H 1550 1400 50  0001 C CNN "Supplier_Name"
+F 6 "0473473P" H 1550 1300 50  0001 C CNN "RS Part Number"
+F 7 "TE CONNECTIVITY" H 1550 1200 50  0001 C CNN "Manufacturer_Name"
+F 8 "CB10LV103M" H 1550 1100 50  0001 C CNN "Manufacturer_Part_Number"
+F 9 "70286133" H 1550 1000 50  0001 C CNN "Allied_Number"
+F 10 "" H 1550 900 50  0001 C CNN "Other Part Number"
+F 11 "" H 1750 800 50  0001 C CNN "Height"
+	1    1200 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L W35504TRC_good MOD_DMX2
+U 1 1 59B94C2B
+P 4300 4400
+F 0 "MOD_DMX2" H 4650 4550 50  0000 C CNN
+F 1 "W35504TRC_good" H 4650 3950 50  0000 C CNN
+F 2 "SHDR04" H 4650 3850 50  0001 C CNN
+F 3 "http://www.winslowadaptics.com/gfx/productgroups/Production Screw Machine Sockets  - SIL/W35520T/W35500 generic.pdf" H 4650 3750 50  0001 C CNN
+F 4 "20 way turned pin low profile skt strip Winslow 2.54mm 20 Way 1 Row Straight Through Hole Female Socket Strip" H 4650 3650 50  0001 C CNN "Description"
+F 5 "RS" H 4650 3550 50  0001 C CNN "Supplier_Name"
+F 6 "2677400" H 4650 3450 50  0001 C CNN "RS Part Number"
+F 7 "Winslow" H 4650 3350 50  0001 C CNN "Manufacturer_Name"
+F 8 "W35520TRC" H 4650 3250 50  0001 C CNN "Manufacturer_Part_Number"
+F 9 "R1002269" H 4650 3150 50  0001 C CNN "Allied_Number"
+F 10 "4.1" H 4850 2950 50  0001 C CNN "Height"
+	1    4300 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L W35504TRC_good MOD_DMX1
+U 1 1 59B94CE7
+P 5850 4400
+F 0 "MOD_DMX1" H 6200 4550 50  0000 C CNN
+F 1 "W35504TRC_good" H 6200 3950 50  0000 C CNN
+F 2 "SHDR04" H 6200 3850 50  0001 C CNN
+F 3 "http://www.winslowadaptics.com/gfx/productgroups/Production Screw Machine Sockets  - SIL/W35520T/W35500 generic.pdf" H 6200 3750 50  0001 C CNN
+F 4 "20 way turned pin low profile skt strip Winslow 2.54mm 20 Way 1 Row Straight Through Hole Female Socket Strip" H 6200 3650 50  0001 C CNN "Description"
+F 5 "RS" H 6200 3550 50  0001 C CNN "Supplier_Name"
+F 6 "2677400" H 6200 3450 50  0001 C CNN "RS Part Number"
+F 7 "Winslow" H 6200 3350 50  0001 C CNN "Manufacturer_Name"
+F 8 "W35520TRC" H 6200 3250 50  0001 C CNN "Manufacturer_Part_Number"
+F 9 "R1002269" H 6200 3150 50  0001 C CNN "Allied_Number"
+F 10 "4.1" H 6400 2950 50  0001 C CNN "Height"
+	1    5850 4400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 TX_1
+U 1 1 59BA24BA
+P 1050 700
+F 0 "TX_1" H 1050 800 50  0000 C CNN
+F 1 "CONN_01X01" V 1150 700 50  0000 C CNN
+F 2 "j_1_pin" H 1050 700 50  0001 C CNN
+F 3 "" H 1050 700 50  0001 C CNN
+	1    1050 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 RX_1
+U 1 1 59BA28F4
+P 1200 700
+F 0 "RX_1" H 1200 800 50  0000 C CNN
+F 1 "CONN_01X01" V 1300 700 50  0000 C CNN
+F 2 "j_1_pin" H 1200 700 50  0001 C CNN
+F 3 "" H 1200 700 50  0001 C CNN
+	1    1200 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 A7_1
+U 1 1 59BA29F0
+P 1350 700
+F 0 "A7_1" H 1350 800 50  0000 C CNN
+F 1 "CONN_01X01" V 1450 700 50  0000 C CNN
+F 2 "j_1_pin" H 1350 700 50  0001 C CNN
+F 3 "" H 1350 700 50  0001 C CNN
+	1    1350 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 A9_1
+U 1 1 59BA29F6
+P 1500 700
+F 0 "A9_1" H 1500 800 50  0000 C CNN
+F 1 "CONN_01X01" V 1600 700 50  0000 C CNN
+F 2 "j_1_pin" H 1500 700 50  0001 C CNN
+F 3 "" H 1500 700 50  0001 C CNN
+	1    1500 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 RAW_1
+U 1 1 59BA2AA6
+P 1650 700
+F 0 "RAW_1" H 1650 800 50  0000 C CNN
+F 1 "CONN_01X01" V 1750 700 50  0000 C CNN
+F 2 "j_1_pin" H 1650 700 50  0001 C CNN
+F 3 "" H 1650 700 50  0001 C CNN
+	1    1650 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 RST_1
+U 1 1 59BA2AAC
+P 1800 700
+F 0 "RST_1" H 1800 800 50  0000 C CNN
+F 1 "CONN_01X01" V 1900 700 50  0000 C CNN
+F 2 "j_1_pin" H 1800 700 50  0001 C CNN
+F 3 "" H 1800 700 50  0001 C CNN
+	1    1800 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 A3_1
+U 1 1 59BA2AB2
+P 1950 700
+F 0 "A3_1" H 1950 800 50  0000 C CNN
+F 1 "CONN_01X01" V 2050 700 50  0000 C CNN
+F 2 "j_1_pin" H 1950 700 50  0001 C CNN
+F 3 "" H 1950 700 50  0001 C CNN
+	1    1950 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 A2_1
+U 1 1 59BA2AB8
+P 2100 700
+F 0 "A2_1" H 2100 800 50  0000 C CNN
+F 1 "CONN_01X01" V 2200 700 50  0000 C CNN
+F 2 "j_1_pin" H 2100 700 50  0001 C CNN
+F 3 "" H 2100 700 50  0001 C CNN
+	1    2100 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 A1_1
+U 1 1 59BA2BC4
+P 2250 700
+F 0 "A1_1" H 2250 800 50  0000 C CNN
+F 1 "CONN_01X01" V 2350 700 50  0000 C CNN
+F 2 "j_1_pin" H 2250 700 50  0001 C CNN
+F 3 "" H 2250 700 50  0001 C CNN
+	1    2250 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 A0_1
+U 1 1 59BA2BCA
+P 2400 700
+F 0 "A0_1" H 2400 800 50  0000 C CNN
+F 1 "CONN_01X01" V 2500 700 50  0000 C CNN
+F 2 "j_1_pin" H 2400 700 50  0001 C CNN
+F 3 "" H 2400 700 50  0001 C CNN
+	1    2400 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 MISO_1
+U 1 1 59BA2BD0
+P 2550 700
+F 0 "MISO_1" H 2550 800 50  0000 C CNN
+F 1 "CONN_01X01" V 2650 700 50  0000 C CNN
+F 2 "j_1_pin" H 2550 700 50  0001 C CNN
+F 3 "" H 2550 700 50  0001 C CNN
+	1    2550 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 RX_DMX_11
+U 1 1 59BA2BD6
+P 4050 4200
+F 0 "RX_DMX_11" H 4050 4300 50  0000 C CNN
+F 1 "CONN_01X01" V 4150 4200 50  0000 C CNN
+F 2 "j_1_pin" H 4050 4200 50  0001 C CNN
+F 3 "" H 4050 4200 50  0001 C CNN
+	1    4050 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 RX_2
+U 1 1 59BA342F
+P 3950 4200
+F 0 "RX_2" H 3950 4300 50  0000 C CNN
+F 1 "CONN_01X01" V 4050 4200 50  0000 C CNN
+F 2 "j_1_pin" H 3950 4200 50  0001 C CNN
+F 3 "" H 3950 4200 50  0001 C CNN
+	1    3950 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 A6_2
+U 1 1 59BA3435
+P 3600 700
+F 0 "A6_2" H 3600 800 50  0000 C CNN
+F 1 "CONN_01X01" V 3700 700 50  0000 C CNN
+F 2 "j_1_pin" H 3600 700 50  0001 C CNN
+F 3 "" H 3600 700 50  0001 C CNN
+	1    3600 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 P5_2
+U 1 1 59BA343B
+P 3750 700
+F 0 "P5_2" H 3750 800 50  0000 C CNN
+F 1 "CONN_01X01" V 3850 700 50  0000 C CNN
+F 2 "j_1_pin" H 3750 700 50  0001 C CNN
+F 3 "" H 3750 700 50  0001 C CNN
+	1    3750 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 P7_2
+U 1 1 59BA3441
+P 3900 700
+F 0 "P7_2" H 3900 800 50  0000 C CNN
+F 1 "CONN_01X01" V 4000 700 50  0000 C CNN
+F 2 "j_1_pin" H 3900 700 50  0001 C CNN
+F 3 "" H 3900 700 50  0001 C CNN
+	1    3900 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 A8_2
+U 1 1 59BA3447
+P 4050 700
+F 0 "A8_2" H 4050 800 50  0000 C CNN
+F 1 "CONN_01X01" V 4150 700 50  0000 C CNN
+F 2 "j_1_pin" H 4050 700 50  0001 C CNN
+F 3 "" H 4050 700 50  0001 C CNN
+	1    4050 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 A9_2
+U 1 1 59BA344D
+P 4200 700
+F 0 "A9_2" H 4200 800 50  0000 C CNN
+F 1 "CONN_01X01" V 4300 700 50  0000 C CNN
+F 2 "j_1_pin" H 4200 700 50  0001 C CNN
+F 3 "" H 4200 700 50  0001 C CNN
+	1    4200 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 RAW_2
+U 1 1 59BA3453
+P 4350 700
+F 0 "RAW_2" H 4350 800 50  0000 C CNN
+F 1 "CONN_01X01" V 4450 700 50  0000 C CNN
+F 2 "j_1_pin" H 4350 700 50  0001 C CNN
+F 3 "" H 4350 700 50  0001 C CNN
+	1    4350 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 RST_2
+U 1 1 59BA3459
+P 4500 700
+F 0 "RST_2" H 4500 800 50  0000 C CNN
+F 1 "CONN_01X01" V 4600 700 50  0000 C CNN
+F 2 "j_1_pin" H 4500 700 50  0001 C CNN
+F 3 "" H 4500 700 50  0001 C CNN
+	1    4500 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 A3_2
+U 1 1 59BA345F
+P 4650 700
+F 0 "A3_2" H 4650 800 50  0000 C CNN
+F 1 "CONN_01X01" V 4750 700 50  0000 C CNN
+F 2 "j_1_pin" H 4650 700 50  0001 C CNN
+F 3 "" H 4650 700 50  0001 C CNN
+	1    4650 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 A2_2
+U 1 1 59BA3465
+P 4800 700
+F 0 "A2_2" H 4800 800 50  0000 C CNN
+F 1 "CONN_01X01" V 4900 700 50  0000 C CNN
+F 2 "j_1_pin" H 4800 700 50  0001 C CNN
+F 3 "" H 4800 700 50  0001 C CNN
+	1    4800 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 A1_2
+U 1 1 59BA346B
+P 4950 700
+F 0 "A1_2" H 4950 800 50  0000 C CNN
+F 1 "CONN_01X01" V 5050 700 50  0000 C CNN
+F 2 "j_1_pin" H 4950 700 50  0001 C CNN
+F 3 "" H 4950 700 50  0001 C CNN
+	1    4950 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 A0_2
+U 1 1 59BA3471
+P 5100 700
+F 0 "A0_2" H 5100 800 50  0000 C CNN
+F 1 "CONN_01X01" V 5200 700 50  0000 C CNN
+F 2 "j_1_pin" H 5100 700 50  0001 C CNN
+F 3 "" H 5100 700 50  0001 C CNN
+	1    5100 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 SCLK_2
+U 1 1 59BA3477
+P 5250 700
+F 0 "SCLK_2" H 5250 800 50  0000 C CNN
+F 1 "CONN_01X01" V 5350 700 50  0000 C CNN
+F 2 "j_1_pin" H 5250 700 50  0001 C CNN
+F 3 "" H 5250 700 50  0001 C CNN
+	1    5250 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 MISO_2
+U 1 1 59BA347D
+P 5400 700
+F 0 "MISO_2" H 5400 800 50  0000 C CNN
+F 1 "CONN_01X01" V 5500 700 50  0000 C CNN
+F 2 "j_1_pin" H 5400 700 50  0001 C CNN
+F 3 "" H 5400 700 50  0001 C CNN
+	1    5400 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 MOSI_2
+U 1 1 59BA3483
+P 5550 700
+F 0 "MOSI_2" H 5550 800 50  0000 C CNN
+F 1 "CONN_01X01" V 5650 700 50  0000 C CNN
+F 2 "j_1_pin" H 5550 700 50  0001 C CNN
+F 3 "" H 5550 700 50  0001 C CNN
+	1    5550 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 A10_2
+U 1 1 59BA3489
+P 5700 700
+F 0 "A10_2" H 5700 800 50  0000 C CNN
+F 1 "CONN_01X01" V 5800 700 50  0000 C CNN
+F 2 "j_1_pin" H 5700 700 50  0001 C CNN
+F 3 "" H 5700 700 50  0001 C CNN
+	1    5700 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 B1
+U 1 1 59BA54EC
+P 5850 700
+F 0 "B1" H 5850 800 50  0000 C CNN
+F 1 "CONN_01X01" V 5950 700 50  0000 C CNN
+F 2 "j_1_pin" H 5850 700 50  0001 C CNN
+F 3 "" H 5850 700 50  0001 C CNN
+	1    5850 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 BX1
+U 1 1 59BA54F2
+P 6000 700
+F 0 "BX1" H 6000 800 50  0000 C CNN
+F 1 "CONN_01X01" V 6100 700 50  0000 C CNN
+F 2 "j_1_pin" H 6000 700 50  0001 C CNN
+F 3 "" H 6000 700 50  0001 C CNN
+	1    6000 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 BY1
+U 1 1 59BA54F8
+P 6150 700
+F 0 "BY1" H 6150 800 50  0000 C CNN
+F 1 "CONN_01X01" V 6250 700 50  0000 C CNN
+F 2 "j_1_pin" H 6150 700 50  0001 C CNN
+F 3 "" H 6150 700 50  0001 C CNN
+	1    6150 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 C1
+U 1 1 59BA54FE
+P 6300 700
+F 0 "C1" H 6300 800 50  0000 C CNN
+F 1 "CONN_01X01" V 6400 700 50  0000 C CNN
+F 2 "j_1_pin" H 6300 700 50  0001 C CNN
+F 3 "" H 6300 700 50  0001 C CNN
+	1    6300 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 CX1
+U 1 1 59BA5504
+P 6450 700
+F 0 "CX1" H 6450 800 50  0000 C CNN
+F 1 "CONN_01X01" V 6550 700 50  0000 C CNN
+F 2 "j_1_pin" H 6450 700 50  0001 C CNN
+F 3 "" H 6450 700 50  0001 C CNN
+	1    6450 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 CY1
+U 1 1 59BA550A
+P 6600 700
+F 0 "CY1" H 6600 800 50  0000 C CNN
+F 1 "CONN_01X01" V 6700 700 50  0000 C CNN
+F 2 "j_1_pin" H 6600 700 50  0001 C CNN
+F 3 "" H 6600 700 50  0001 C CNN
+	1    6600 700 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1000 1050 8300 1050
+Wire Wire Line
+	3100 1900 3300 1900
+Wire Wire Line
+	3300 1900 3300 1050
+Connection ~ 3300 1050
+Wire Wire Line
+	4500 1900 4700 1900
+Wire Wire Line
+	4700 1900 4700 1050
+Connection ~ 4700 1050
+Wire Wire Line
+	2200 1800 2000 1800
+Wire Wire Line
+	2000 1800 2000 3550
+Connection ~ 2000 3550
+Wire Wire Line
+	3600 1800 3450 1800
+Wire Wire Line
+	3450 1800 3450 3550
+Connection ~ 3450 3550
+Wire Wire Line
+	3600 1900 3450 1900
+Connection ~ 3450 1900
+Wire Wire Line
+	2200 1900 2000 1900
+Connection ~ 2000 1900
+Wire Wire Line
+	3100 1700 3200 1700
+Wire Wire Line
+	3200 1700 3200 3550
+Connection ~ 3200 3550
+Wire Wire Line
+	4500 1700 4600 1700
+Wire Wire Line
+	4600 1700 4600 3550
+Connection ~ 4600 3550
+Wire Wire Line
+	4950 2450 4600 2450
+Connection ~ 4600 2450
+Wire Wire Line
+	2200 2500 1900 2500
+Wire Wire Line
+	2200 2600 1800 2600
+Wire Wire Line
+	2200 2000 2150 2000
+Wire Wire Line
+	2150 2000 2150 1400
+Wire Wire Line
+	2150 1400 3550 1400
+Wire Wire Line
+	3550 1400 3550 2000
+Wire Wire Line
+	3550 2000 3600 2000
+Wire Wire Line
+	3600 2100 3500 2100
+Wire Wire Line
+	3500 2100 3500 1450
+Wire Wire Line
+	3500 1450 2100 1450
+Wire Wire Line
+	2100 1450 2100 2100
+Wire Wire Line
+	2100 2100 2200 2100
+Wire Wire Line
+	2200 2300 2150 2300
+Wire Wire Line
+	2150 2300 2150 2900
+Wire Wire Line
+	2150 2900 4850 2900
+Wire Wire Line
+	4850 2900 4850 2550
+Wire Wire Line
+	4850 2550 4950 2550
+Wire Wire Line
+	4950 2650 4850 2650
+Connection ~ 4850 2650
+Wire Wire Line
+	4950 2750 4850 2750
+Connection ~ 4850 2750
+Wire Wire Line
+	6900 2300 6900 3550
+Wire Wire Line
+	6350 1550 6650 1550
+Wire Wire Line
+	4950 1650 4800 1650
+Wire Wire Line
+	4800 1650 4800 3100
+Wire Wire Line
+	3600 2400 3550 2400
+Wire Wire Line
+	3550 2400 3550 3100
+Wire Wire Line
+	3550 3100 4800 3100
+Wire Wire Line
+	1200 3550 1200 3350
+Connection ~ 1200 3550
+Wire Wire Line
+	1200 2600 1200 3050
+Wire Wire Line
+	1200 2600 1050 2600
+Wire Wire Line
+	1050 2600 1050 1050
+Connection ~ 1050 1050
+Wire Wire Line
+	4950 1550 4950 1350
+Wire Wire Line
+	4950 1350 6800 1350
+Wire Wire Line
+	700  1050 700  5700
+Wire Wire Line
+	1050 1050 700  1050
+Wire Wire Line
+	1900 3750 1150 3750
+Wire Wire Line
+	1800 3900 2400 3900
+Connection ~ 6900 3550
+Wire Wire Line
+	3100 2700 3100 3000
+Wire Wire Line
+	3100 3000 2700 3000
+Wire Wire Line
+	3100 2600 3300 2600
+Wire Wire Line
+	3300 2600 3300 3700
+Wire Wire Line
+	3300 3700 2600 3700
+Wire Wire Line
+	3100 2400 3400 2400
+Wire Wire Line
+	3400 2400 3400 3800
+Wire Wire Line
+	7200 4100 7200 3550
+Connection ~ 7200 3550
+Wire Wire Line
+	700  5700 6150 5700
+Wire Wire Line
+	4100 1600 4100 4050
+Wire Wire Line
+	6800 1350 6800 2100
+Wire Wire Line
+	6800 2100 7000 2100
+Wire Wire Line
+	6900 1900 7000 1900
+Wire Wire Line
+	6900 2300 7000 2300
+Wire Wire Line
+	1400 4400 1150 4400
+Wire Wire Line
+	1150 4500 1400 4500
+Wire Wire Line
+	2250 4500 2100 4500
+Wire Wire Line
+	2100 4400 2250 4400
+Wire Wire Line
+	2100 4200 2400 4200
+Wire Wire Line
+	2400 4300 2100 4300
+Wire Wire Line
+	2400 3900 2400 4300
+Connection ~ 2400 4200
+Wire Wire Line
+	2250 3550 2250 4500
+Connection ~ 2250 4400
+Connection ~ 2250 3550
+Wire Wire Line
+	9350 3550 950  3550
+Wire Wire Line
+	1150 3750 1150 4500
+Connection ~ 1150 4400
+Wire Wire Line
+	700  4750 2500 4750
+Wire Wire Line
+	2500 4750 2500 4200
+Wire Wire Line
+	2500 4200 2950 4200
+Connection ~ 700  4750
+Wire Wire Line
+	2950 4300 2700 4300
+Wire Wire Line
+	2700 4400 2950 4400
+Wire Wire Line
+	2700 3000 2700 4400
+Connection ~ 2700 4300
+Wire Wire Line
+	2600 4500 2950 4500
+Wire Wire Line
+	2600 3700 2600 4500
+Wire Wire Line
+	3650 4200 3650 3850
+Wire Wire Line
+	3650 3850 2600 3850
+Connection ~ 2600 3850
+Wire Wire Line
+	3400 3800 3700 3800
+Wire Wire Line
+	3700 3800 3700 4400
+Wire Wire Line
+	3700 4300 3650 4300
+Wire Wire Line
+	3700 4400 3650 4400
+Connection ~ 3700 4300
+Wire Wire Line
+	3650 4500 3750 4500
+Wire Wire Line
+	3750 4500 3750 3550
+Connection ~ 3750 3550
+Wire Wire Line
+	8300 1050 8300 1700
+Wire Wire Line
+	8300 1500 8450 1500
+Wire Wire Line
+	8300 1600 8450 1600
+Connection ~ 8300 1500
+Wire Wire Line
+	8300 1700 8450 1700
+Connection ~ 8300 1600
+Wire Wire Line
+	6650 1550 6650 1000
+Wire Wire Line
+	6650 1000 8350 1000
+Wire Wire Line
+	8350 1000 8350 1800
+Wire Wire Line
+	8350 1800 8450 1800
+Wire Wire Line
+	9150 1500 9200 1500
+Wire Wire Line
+	9200 1500 9200 1250
+Wire Wire Line
+	9200 1250 8350 1250
+Connection ~ 8350 1250
+Wire Wire Line
+	9350 1600 9350 3550
+Wire Wire Line
+	9350 1800 9150 1800
+Wire Wire Line
+	9150 1700 9350 1700
+Connection ~ 9350 1800
+Wire Wire Line
+	9150 1600 9350 1600
+Connection ~ 9350 1700
+Wire Wire Line
+	1800 2600 1800 3900
+Wire Wire Line
+	1900 2500 1900 3750
+Wire Wire Line
+	950  3550 950  3650
+Wire Wire Line
+	1400 4200 700  4200
+Connection ~ 700  4200
+Wire Wire Line
+	1400 4300 700  4300
+Connection ~ 700  4300
+Wire Wire Line
+	5650 3550 5650 2850
+Connection ~ 5650 3550
+Wire Wire Line
+	6350 2650 6350 3550
+Connection ~ 6350 3550
+Wire Wire Line
+	5650 1450 5650 1050
+Connection ~ 5650 1050
+Wire Wire Line
+	2200 2200 1150 2200
+Wire Wire Line
+	1150 2200 1150 2150
+Wire Wire Line
+	1150 2150 1200 2150
+Wire Wire Line
+	1200 2050 1000 2050
+Wire Wire Line
+	1000 2050 1000 3550
+Connection ~ 1000 3550
+Wire Wire Line
+	1900 2050 1900 1050
+Connection ~ 1900 1050
+Wire Wire Line
+	4200 4050 4200 4700
+Wire Wire Line
+	4200 4700 4300 4700
+Wire Wire Line
+	4300 4600 4300 4500
+Wire Wire Line
+	5850 4700 6600 4700
+Wire Wire Line
+	6600 4700 6600 3550
+Connection ~ 6600 3550
+Wire Wire Line
+	7900 4100 7900 4600
+Wire Wire Line
+	7900 4600 5850 4600
+Wire Wire Line
+	7200 4200 7200 4500
+Wire Wire Line
+	7200 4500 5850 4500
+Wire Wire Line
+	6150 5700 6150 4400
+Wire Wire Line
+	6150 4400 5850 4400
+Wire Wire Line
+	2200 1600 1100 1600
+Wire Wire Line
+	1100 1600 1100 900 
+Wire Wire Line
+	1100 900  1050 900 
+Wire Wire Line
+	2200 1700 1200 1700
+Wire Wire Line
+	1200 1700 1200 900 
+Wire Wire Line
+	2200 2400 2200 1350
+Wire Wire Line
+	2200 1350 1350 1350
+Wire Wire Line
+	1350 1350 1350 900 
+Wire Wire Line
+	2200 2700 1750 2700
+Wire Wire Line
+	1750 2700 1750 1300
+Wire Wire Line
+	1750 1300 1500 1300
+Wire Wire Line
+	1500 1300 1500 900 
+Wire Wire Line
+	3100 1600 3100 1250
+Wire Wire Line
+	3100 1250 1650 1250
+Wire Wire Line
+	1650 1250 1650 900 
+Wire Wire Line
+	3100 1800 3150 1800
+Wire Wire Line
+	3150 1800 3150 1200
+Wire Wire Line
+	3150 1200 1800 1200
+Wire Wire Line
+	1800 1200 1800 900 
+Wire Wire Line
+	3100 2000 3250 2000
+Wire Wire Line
+	3250 2000 3250 1150
+Wire Wire Line
+	3250 1150 1950 1150
+Wire Wire Line
+	1950 1150 1950 900 
+Wire Wire Line
+	3100 2100 3350 2100
+Wire Wire Line
+	3350 2100 3350 1100
+Wire Wire Line
+	3350 1100 2100 1100
+Wire Wire Line
+	2100 1100 2100 900 
+Wire Wire Line
+	3100 2200 3400 2200
+Wire Wire Line
+	3400 2200 3400 1000
+Wire Wire Line
+	3400 1000 2250 1000
+Wire Wire Line
+	2250 1000 2250 900 
+Wire Wire Line
+	3100 2300 3050 2300
+Wire Wire Line
+	3050 2300 3050 1300
+Wire Wire Line
+	3050 1300 2400 1300
+Wire Wire Line
+	2400 1300 2400 900 
+Wire Wire Line
+	3100 2500 3000 2500
+Wire Wire Line
+	3000 2500 3000 1350
+Wire Wire Line
+	3000 1350 2550 1350
+Wire Wire Line
+	2550 1350 2550 900 
+Wire Wire Line
+	3450 900  3450 1700
+Wire Wire Line
+	3600 2200 3650 2200
+Wire Wire Line
+	3650 2200 3650 1300
+Wire Wire Line
+	3650 1300 3600 1300
+Wire Wire Line
+	3600 1300 3600 900 
+Wire Wire Line
+	3600 2300 3700 2300
+Wire Wire Line
+	3700 2300 3700 1300
+Wire Wire Line
+	3700 1300 3750 1300
+Wire Wire Line
+	3750 1300 3750 900 
+Wire Wire Line
+	3600 2500 3750 2500
+Wire Wire Line
+	3750 2500 3750 1350
+Wire Wire Line
+	3750 1350 3900 1350
+Wire Wire Line
+	3900 1350 3900 900 
+Wire Wire Line
+	3600 2600 3800 2600
+Wire Wire Line
+	3800 2600 3800 1400
+Wire Wire Line
+	3800 1400 4050 1400
+Wire Wire Line
+	4050 1400 4050 900 
+Wire Wire Line
+	3600 2700 3600 2800
+Wire Wire Line
+	3600 2800 3950 2800
+Wire Wire Line
+	3950 2800 3950 1450
+Wire Wire Line
+	3950 1450 4200 1450
+Wire Wire Line
+	4200 1450 4200 900 
+Wire Wire Line
+	4500 1600 4300 1600
+Wire Wire Line
+	4300 1600 4300 950 
+Wire Wire Line
+	4300 950  4350 950 
+Wire Wire Line
+	4350 950  4350 900 
+Wire Wire Line
+	4500 1800 4350 1800
+Wire Wire Line
+	4350 1800 4350 1000
+Wire Wire Line
+	4350 1000 4500 1000
+Wire Wire Line
+	4500 1000 4500 900 
+Wire Wire Line
+	4500 2000 4400 2000
+Wire Wire Line
+	4400 2000 4400 1100
+Wire Wire Line
+	4400 1100 4650 1100
+Wire Wire Line
+	4650 1100 4650 900 
+Wire Wire Line
+	4500 2100 4450 2100
+Wire Wire Line
+	4450 2100 4450 1150
+Wire Wire Line
+	4450 1150 4800 1150
+Wire Wire Line
+	4800 1150 4800 900 
+Wire Wire Line
+	4500 2200 4550 2200
+Wire Wire Line
+	4550 2200 4550 1200
+Wire Wire Line
+	4550 1200 4950 1200
+Wire Wire Line
+	4950 1200 4950 900 
+Wire Wire Line
+	4500 2300 4650 2300
+Wire Wire Line
+	4650 2300 4650 1250
+Wire Wire Line
+	4650 1250 5100 1250
+Wire Wire Line
+	5100 1250 5100 900 
+Wire Wire Line
+	4500 2400 4750 2400
+Wire Wire Line
+	4750 2400 4750 1300
+Wire Wire Line
+	4750 1300 5250 1300
+Wire Wire Line
+	5250 1300 5250 900 
+Wire Wire Line
+	4500 2500 4850 2500
+Wire Wire Line
+	4850 2500 4850 1400
+Wire Wire Line
+	4850 1400 5400 1400
+Wire Wire Line
+	5400 1400 5400 900 
+Wire Wire Line
+	4500 2600 4900 2600
+Wire Wire Line
+	4900 2600 4900 1450
+Wire Wire Line
+	4900 1450 5550 1450
+Wire Wire Line
+	5550 1450 5550 900 
+Wire Wire Line
+	4500 2700 5700 2700
+Wire Wire Line
+	5700 2700 5700 900 
+Wire Wire Line
+	6350 1850 6350 1450
+Wire Wire Line
+	6350 1450 5850 1450
+Wire Wire Line
+	5850 1450 5850 900 
+Wire Wire Line
+	4950 1850 5750 1850
+Wire Wire Line
+	5750 1850 5750 1300
+Wire Wire Line
+	5750 1300 6000 1300
+Wire Wire Line
+	6000 1300 6000 900 
+Wire Wire Line
+	4950 1950 5800 1950
+Wire Wire Line
+	5800 1950 5800 1250
+Wire Wire Line
+	5800 1250 6150 1250
+Wire Wire Line
+	6150 1250 6150 900 
+Wire Wire Line
+	6350 2150 6300 2150
+Wire Wire Line
+	6300 2150 6300 900 
+Wire Wire Line
+	4950 2150 5900 2150
+Wire Wire Line
+	5900 2150 5900 2250
+Wire Wire Line
+	5900 2250 6450 2250
+Wire Wire Line
+	6450 2250 6450 900 
+Wire Wire Line
+	4950 2250 5850 2250
+Wire Wire Line
+	5850 2250 5850 2350
+Wire Wire Line
+	5850 2350 6600 2350
+Wire Wire Line
+	6600 2350 6600 900 
+Wire Wire Line
+	4300 4400 4050 4400
+$Comp
+L CONN_01X01 TX1
+U 1 1 59BB9A0E
+P 4100 3850
+F 0 "TX1" H 4100 3950 50  0000 C CNN
+F 1 "CONN_01X01" V 4200 3850 50  0000 C CNN
+F 2 "j_1_pin" H 4100 3850 50  0001 C CNN
+F 3 "" H 4100 3850 50  0001 C CNN
+	1    4100 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 TX_DMX_1
+U 1 1 59BB9AF7
+P 4200 3850
+F 0 "TX_DMX_1" H 4200 3950 50  0000 C CNN
+F 1 "CONN_01X01" V 4300 3850 50  0000 C CNN
+F 2 "j_1_pin" H 4200 3850 50  0001 C CNN
+F 3 "" H 4200 3850 50  0001 C CNN
+	1    4200 3850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8000 4200 8000 3550
+Connection ~ 8000 3550
+$Comp
+L FX0321-RESCUE-pitaya_0001 U1
+U 1 1 59BA84BE
+P 7150 1500
+F 0 "U1" H 7500 1650 50  0000 C CNN
+F 1 "FX0321" H 7500 1350 50  0000 C CNN
+F 2 "FX0321" H 7500 1250 50  0001 C CNN
+F 3 "http://docs-europe.electrocomponents.com/webdocs/152b/0900766b8152bdd4.pdf" H 7500 1150 50  0001 C CNN
+F 4 "BULGIN - FX0321 - FUSE HOLDER, 20X5MM" H 7500 1050 50  0001 C CNN "Description"
+F 5 "RS" H 7500 950 50  0001 C CNN "Supplier_Name"
+F 6 "" H 7500 850 50  0001 C CNN "RS Part Number"
+F 7 "BULGIN" H 7500 750 50  0001 C CNN "Manufacturer_Name"
+F 8 "FX0321" H 7500 650 50  0001 C CNN "Manufacturer_Part_Number"
+F 9 "" H 7500 550 50  0001 C CNN "Allied_Number"
+F 10 "" H 7500 450 50  0001 C CNN "Other Part Number"
+F 11 "" H 7700 350 50  0001 C CNN "Height"
+	1    7150 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 1900 6900 1500
+Wire Wire Line
+	6900 1500 7150 1500
+Wire Wire Line
+	7850 1500 7900 1500
+Wire Wire Line
+	7900 1500 7900 1050
+Connection ~ 7900 1050
+Wire Wire Line
+	3450 1700 3600 1700
+Wire Wire Line
+	3600 1600 4100 1600
+Wire Wire Line
+	3450 900  1300 900 
+Wire Wire Line
+	1300 900  1300 1450
+Wire Wire Line
+	1300 1450 800  1450
+Wire Wire Line
+	800  1450 800  4950
+Wire Wire Line
+	800  4950 3950 4950
+Wire Wire Line
+	3950 4950 3950 4400
+$EndSCHEMATC

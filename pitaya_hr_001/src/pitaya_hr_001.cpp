@@ -1,4 +1,6 @@
 #define DEBUG 1
+
+#include <Arduino.h>
 /* Include the HCMAX7219 and SPI library */
 #include "SPI.h"
 #include "Wire.h"

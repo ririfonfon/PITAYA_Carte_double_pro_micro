@@ -1,3 +1,5 @@
+
+#include <Arduino.h>
 #include <Adafruit_NeoPixel.h>
 #include "Wire.h"
 
@@ -17,6 +19,9 @@ Adafruit_NeoPixel strip = Adafruit_NeoPixel(150, PIN, NEO_GRB + NEO_KHZ800);
 
 /* Utilisation du capteur Ultrason HC-SR04 */
 
+uint32_t Wheel(byte WheelPos);
+void receiveEvent(int howMany);
+void theaterChase(uint32_t c, uint8_t wait);
 
 void setup() {
   // Serial.begin(9600);

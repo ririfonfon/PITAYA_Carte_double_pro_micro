@@ -1,17 +1,19 @@
 #define DEBUG 1
 /* Include the HCMAX7219 and SPI library */
-#include <HCMAX7219.h>
 #include "SPI.h"
 #include "Wire.h"
+#include <DigitLed72xx.h>
 
 #define NUMBEROFDRIVERS 1
 /* Set the LOAD (CS) digital pin number*/
-#define LOAD 10
+#define LOAD_PIN 10
+#define NCHIP 2
+
 #define COMUT 5
 
-
 /* Create an instance of the library */
-HCMAX7219 HCMAX7219(LOAD);
+DigitLed72xx ld = DigitLed72xx(LOAD_PIN, NCHIP);
+int digi = 0;
 
 /* Utilisation du capteur Ultrason HC-SR04 */
 
@@ -25,7 +27,11 @@ int n = 0;
 int val = 0;
 int i = 0;
 
-void setup() {
+void sendi2c();
+void reset_hcsr04();
+
+void setup()
+{
   Wire.begin();
 
   pinMode(COMUT, OUTPUT);
@@ -37,10 +43,13 @@ void setup() {
 
   digitalWrite(COMUT, LOW);
   delay(100);
+
+  ld.on(2);
 }
 
-void loop() {
-
+void loop()
+{
+  digi = digi % (NCHIP + 1);
   val = analogRead(analogPin) / 2;
   digitalWrite(trig, HIGH);
   delayMicroseconds(10);
@@ -72,20 +81,17 @@ void loop() {
   Serial.println(cm);
 #endif
   /* Clear the output buffer */
-  HCMAX7219.Clear();
+  ld.clear(digi);
   /* Write some text to the output buffer */
-  HCMAX7219.print7Seg(cm, 4);
-  HCMAX7219.print7Seg(val, 8);
-  /* Send the output buffer to the display */
-  HCMAX7219.Refresh();
+  ld.printDigit(cm, digi, 4);
+  ld.printDigit(val, digi, 8);
   delay(10);
-
 }
 
 void sendi2c()
 {
   Wire.beginTransmission(8); // transmit to device #8
-  Wire.write(cm);              // sends one byte
+  Wire.write(cm);            // sends one byte
   Wire.endTransmission();    // stop transmitting
 }
 
@@ -96,4 +102,3 @@ void reset_hcsr04()
   delay(100);
   pinMode(echo, INPUT);
 }
-
